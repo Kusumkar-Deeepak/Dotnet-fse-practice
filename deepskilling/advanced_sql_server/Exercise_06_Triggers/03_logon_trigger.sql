@@ -1,0 +1,20 @@
+-- DEMO ONLY
+-- DO NOT EXECUTE
+
+CREATE TRIGGER trg_LogonRestriction
+ON ALL SERVER
+FOR LOGON
+AS
+BEGIN
+
+    DECLARE @CurrentHour INT;
+
+    SET @CurrentHour = DATEPART(HOUR, GETDATE());
+
+    IF @CurrentHour BETWEEN 2 AND 3
+    BEGIN
+        ROLLBACK;
+    END
+
+END;
+GO
