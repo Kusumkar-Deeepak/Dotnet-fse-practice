@@ -1,209 +1,104 @@
-# Advanced SQL Server Exercises
+# DotNet FSE Practice
 
-## Overview
+This workspace contains SQL Server exercises and C# engineering concept projects completed as part of the DotNet FSE Deep Skilling Program.
 
-This repository contains SQL Server exercises completed as part of the DotNet FSE Deep Skilling Program.
+## SQL Server Exercises
 
-The exercises cover important database concepts such as Window Functions, Indexes, Views, Stored Procedures, Functions, Triggers, Cursors, and Exception Handling.
+All SQL scripts were written and tested in SQL Server Management Studio (SSMS).
 
-All exercises were implemented and tested using SQL Server Management Studio (SSMS).
+### Exercise 01 - Ranking and Window Functions
 
----
+This exercise covers `ROW_NUMBER()`, `RANK()`, `DENSE_RANK()`, `OVER()`, and `PARTITION BY`.
 
-## Exercise 01 - Advanced SQL Concepts
+What I practiced:
 
-### Topics Covered
+- Assigning row numbers to records.
+- Comparing ranking results for tied values.
+- Finding top products per category with window functions.
 
-- ROW_NUMBER()
-- RANK()
-- DENSE_RANK()
-- Top N Records
-- Window Functions
+### Exercise 02 - Indexes
 
-### Learning
+This exercise covers non-clustered, clustered, and composite indexes.
 
-- Assigned row numbers to records.
-- Compared RANK and DENSE_RANK.
-- Retrieved top records using ranking functions.
-- Understood practical use of Window Functions.
+What I practiced:
 
----
+- Improving search performance with indexes.
+- Verifying the clustered index created by the primary key.
+- Creating a composite index for filtering by more than one column.
 
-## Exercise 02 - Indexes
+### Exercise 04 - Stored Procedures
 
-### Topics Covered
+This exercise covers procedure creation, input parameters, and returning data.
 
-- Clustered Index
-- Non-Clustered Index
-- Unique Index
-- Index Modification
-- Index Deletion
+What I practiced:
 
-### Learning
+- Creating reusable stored procedures.
+- Passing values through parameters.
+- Returning employee details and counts from procedures.
 
-- Improved query performance using indexes.
-- Understood differences between clustered and non-clustered indexes.
-- Created, modified, and removed indexes.
+### Exercise 05 - Functions
 
----
+This exercise covers scalar functions and nested function usage.
 
-## Exercise 03 - Views
+What I practiced:
 
-### Topics Covered
+- Creating a reusable scalar function.
+- Calculating annual salary values.
+- Querying a specific employee salary using a function.
 
-- Simple Views
-- Filtered Views
-- Join Views
-- View Modification
-- View Deletion
+## Engineering Concepts
 
-### Learning
+### 02 - E-commerce Platform Search Function
 
-- Simplified complex queries using views.
-- Improved data security.
-- Reused frequently used queries.
+Location: [deepskilling/Engineering_Concepts/Data_Structure_And_Algorithms/02_E-commerce Platform Search Function/EcommerceSearchSystem](deepskilling/Engineering_Concepts/Data_Structure_And_Algorithms/02_E-commerce%20Platform%20Search%20Function/EcommerceSearchSystem)
 
----
+This project compares linear search and binary search on a product list.
 
-## Exercise 04 - Stored Procedures
+What I practiced:
 
-### Topics Covered
+- Searching for a product by ID.
+- Comparing a simple search with a faster search on sorted data.
+- Printing the product details when a match is found.
 
-- Procedure Creation
-- Input Parameters
-- Output Parameters
-- Procedure Modification
-- Procedure Deletion
+### 07 - Financial Forecasting
 
-### Learning
+Location: [deepskilling/Engineering_Concepts/Data_Structure_And_Algorithms/07_Financial Forecasting/FinancialForecasting](deepskilling/Engineering_Concepts/Data_Structure_And_Algorithms/07_Financial%20Forecasting/FinancialForecasting)
 
-- Created reusable SQL procedures.
-- Passed values using parameters.
-- Returned values using output parameters.
+This project uses recursion to predict the future value of an investment or amount based on a growth rate.
 
----
+What I practiced:
 
-## Exercise 05 - Functions
+- Using recursion in C#.
+- Accepting current value, growth rate, and years from the user.
+- Calculating the future value step by step.
 
-### Topics Covered
+## Current Folder Structure
 
-- Scalar Functions
-- Table-Valued Functions
-- Nested Functions
-- Function Modification
-- Function Deletion
-
-### Learning
-
-- Created reusable functions.
-- Calculated annual salary and bonus.
-- Retrieved department-wise employee data.
-- Used nested functions.
-
----
-
-## Exercise 06 - Triggers
-
-### Topics Covered
-
-- AFTER Trigger
-- INSTEAD OF Trigger
-- Trigger Modification
-- Trigger Deletion
-- Automatic Data Updates
-
-### Learning
-
-- Logged salary changes automatically.
-- Prevented unauthorized deletions.
-- Maintained data consistency using triggers.
-
----
-
-## Exercise 07 - Cursors
-
-### Topics Covered
-
-- Basic Cursor
-- Static Cursor
-- Dynamic Cursor
-- Forward Only Cursor
-- Keyset Cursor
-
-### Learning
-
-- Processed records row-by-row.
-- Compared different cursor types.
-- Understood cursor behavior and usage.
-
----
-
-## Exercise 08 - Exception Handling
-
-### Topics Covered
-
-- TRY...CATCH
-- THROW
-- RAISERROR
-- Nested Exception Handling
-- Transaction Handling
-- Rollback Operations
-
-### Learning
-
-- Handled runtime errors.
-- Logged database errors.
-- Used transactions with rollback.
-- Implemented custom error messages.
-
----
+```text
+Dotnet-fse-practice/
+├── README.md
+└── deepskilling/
+	├── advanced_sql_server/
+	│   ├── Exercise_01_Advanced_concepts/
+	│   ├── Exercise_02_Indexes/
+	│   ├── Exercise_04_Stored_Procedures/
+	│   └── Exercise_05_Functions/
+	└── Engineering_Concepts/
+		└── Data_Structure_And_Algorithms/
+			├── 02_E-commerce Platform Search Function/
+			└── 07_Financial Forecasting/
+```
 
 ## Tools Used
 
 - Microsoft SQL Server
 - SQL Server Management Studio (SSMS)
+- C#
+- .NET
 - Git
 - GitHub
 - Visual Studio Code
 
----
+## Summary
 
-## Project Structure
-
-```text
-advanced_sql_server
-│
-├── Exercise_01_Advanced_concepts
-├── Exercise_02_Indexes
-├── Exercise_03_Views
-├── Exercise_04_Stored_Procedures
-├── Exercise_05_Functions
-├── Exercise_06_Triggers
-├── Exercise_07_Cursors
-├── Exercise_08_Exception_Handling
-│
-└── README.md
-```
-
----
-
-## Skills Gained
-
-- SQL Query Writing
-- Window Functions
-- Query Optimization
-- Indexing
-- Views
-- Stored Procedures
-- Functions
-- Triggers
-- Cursors
-- Exception Handling
-- Transaction Management
-- Database Development
-
----
-
-## Conclusion
-
-These exercises helped me gain hands-on experience with advanced SQL Server concepts and database programming. Through practical implementation and testing, I improved my understanding of database design, optimization, automation, and error handling techniques used in real-world applications.
+This workspace shows practical work in both SQL Server and C#. The SQL exercises focused on writing better queries and building reusable database logic, while the engineering projects focused on search algorithms and recursion in a simple, real-world way.
