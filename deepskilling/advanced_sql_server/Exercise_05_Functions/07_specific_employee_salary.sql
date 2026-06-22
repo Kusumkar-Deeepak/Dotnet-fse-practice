@@ -1,9 +1,10 @@
+USE RetailStore;
+GO
+
 SELECT
     EmployeeID,
     FirstName,
-
-    dbo.fn_CalculateAnnualSalary(Salary)
-    AS AnnualSalary
-
+    Salary AS MonthlySalary,
+    dbo.fn_AnnualSalary(Salary) AS AnnualSalary
 FROM Employees
 WHERE EmployeeID = 101;

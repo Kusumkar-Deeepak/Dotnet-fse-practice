@@ -1,6 +1,9 @@
 USE RetailStore;
 GO
 
+DROP PROCEDURE IF EXISTS sp_GetEmployeesByDepartment;
+GO
+
 CREATE PROCEDURE sp_GetEmployeesByDepartment
     @DepartmentID INT
 AS

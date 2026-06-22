@@ -1,4 +1,4 @@
-oUSE RetailStore;
+USE RetailStore;
 
 WITH ProductRanking AS
 (

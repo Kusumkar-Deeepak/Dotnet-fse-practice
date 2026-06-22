@@ -1,15 +1,16 @@
 USE RetailStore;
 GO
 
-CREATE OR ALTER FUNCTION fn_CalculateAnnualSalary
+DROP FUNCTION IF EXISTS fn_AnnualSalary;
+GO
+
+CREATE FUNCTION fn_AnnualSalary
 (
-    @Salary DECIMAL(10,2)
+    @MonthlySalary DECIMAL(10,2)
 )
 RETURNS DECIMAL(10,2)
 AS
 BEGIN
-
-    RETURN @Salary * 12;
-
+    RETURN @MonthlySalary * 12;
 END;
 GO

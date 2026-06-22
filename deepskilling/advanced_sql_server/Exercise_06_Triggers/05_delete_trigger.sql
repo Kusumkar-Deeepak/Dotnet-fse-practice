@@ -1,1 +1,0 @@
-DROP TRIGGER trg_PreventDelete;
