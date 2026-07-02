@@ -1,0 +1,4 @@
+<Solution>
+  <Project Path="../../../Nunit_Handson/MagicFilesLib/MagicFilesLib.csproj" />
+  <Project Path="CustomerCommLib.csproj" />
+</Solution>

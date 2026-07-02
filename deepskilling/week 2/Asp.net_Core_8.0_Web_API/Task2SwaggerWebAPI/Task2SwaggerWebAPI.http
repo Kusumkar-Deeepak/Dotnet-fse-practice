@@ -1,0 +1,19 @@
+@Task2SwaggerWebAPI_HostAddress = http://localhost:5165
+
+GET {{Task2SwaggerWebAPI_HostAddress}}/api/Emp
+Accept: application/json
+
+###
+
+GET {{Task2SwaggerWebAPI_HostAddress}}/api/Emp/1
+Accept: application/json
+
+###
+
+POST {{Task2SwaggerWebAPI_HostAddress}}/api/Emp
+Content-Type: application/json
+
+{
+  "name": "New Employee",
+  "department": "Sales"
+}

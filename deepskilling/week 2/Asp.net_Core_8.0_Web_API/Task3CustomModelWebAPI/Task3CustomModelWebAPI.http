@@ -1,0 +1,10 @@
+@Task3CustomModelWebAPI_HostAddress = http://localhost:5166
+
+GET {{Task3CustomModelWebAPI_HostAddress}}/api/employee
+Accept: application/json
+
+###
+
+GET {{Task3CustomModelWebAPI_HostAddress}}/api/employee?throwError=true
+Authorization: Bearer demo-token
+Accept: application/json
