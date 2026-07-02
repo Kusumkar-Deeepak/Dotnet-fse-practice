@@ -24,12 +24,6 @@ This folder is the first sample project. It keeps the code simple and adds Swagg
 4. Open `http://localhost:5164/swagger` or the URL shown in the console.
 5. Test `GET /api/values` first.
 
-## Screenshot to capture
-
-- Screenshot 1: browser showing the Swagger page.
-- Screenshot 2: Swagger GET response for `/api/values`.
-- Screenshot 3: optional Postman or HTTP file result for the same GET endpoint.
-
 ## Files
 
 - `Program.cs` for startup and Swagger.

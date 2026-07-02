@@ -21,9 +21,3 @@ This folder contains three separate small projects for the Web API tasks.
 3. Restore packages if needed.
 4. Run the project from that folder.
 5. Open the browser or Swagger page for the project.
-
-## Screenshot order for submission
-
-- Task 1: show the project running and the GET response for Values.
-- Task 2: show Swagger page, then show Postman GET result for Employee.
-- Task 3: show Swagger page, then show the GET Employee result with Authorization header, and show the exception test output.

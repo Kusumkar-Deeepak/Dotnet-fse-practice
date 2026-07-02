@@ -32,11 +32,3 @@ This project shows a simple custom `Employee` model, a custom auth filter, and a
 4. Open `http://localhost:5166/swagger` or the URL shown in the console.
 5. Call `GET /api/employee` with the header `Authorization: Bearer demo-token`.
 6. Call `GET /api/employee?throwError=true` to test the exception filter.
-
-## Screenshot to capture
-
-- Screenshot 1: Swagger page showing the employee endpoints.
-- Screenshot 2: GET employee list response with the Authorization header.
-- Screenshot 3: bad request response when the header is missing.
-- Screenshot 4: exception response for `throwError=true`.
-- Screenshot 5: the log file or folder showing `Logs/exceptions.txt`.
